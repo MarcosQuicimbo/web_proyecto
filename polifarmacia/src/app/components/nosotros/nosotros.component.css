@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#datos{
+    margin-top: 10px;
+    float: left;
+    font-family: "BebasNeue";
+    margin-left: 150px;
+    margin-bottom: 10px;
+}
+
+#negocio img{
+    margin-left: 52px;
+    width: 100%;
+    height: 400px;
+}
+
+#informacion {
+    margin-right: 20px;
+    margin-left: 0px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: "BebasNeue";
+}
+
+#siguenos{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000); 
+    background: linear-gradient(to right, #434343, #000000); 
+ 
+    width: 92.6%;
+    margin-left: 52px;
+    margin-right: 52px;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 6px;
+    font-size: 25px;
+}
+#siguenos label{
+    font-family: "BebasNeue";
+    letter-spacing: 2px;
+    color: #EFA021;
+    margin-left: 450px;
+    padding: 3px;
+    margin-right: 20px;
+}
+#siguenos a{
+    color: #EFA021;
+    text-decoration: none;
+}
+#siguenos a:hover{
+    color: #EFA021;
+}
+#siguenos i{
+    margin-left: 15px;
+    margin-right: 15px;
+}

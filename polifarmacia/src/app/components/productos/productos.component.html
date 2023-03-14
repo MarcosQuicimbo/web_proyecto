@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Stock de Productos</h2>
+    <!-- <app-buscar></app-buscar> -->
+    <ul>
+        <li *ngFor="let producto of productos" class="producto">
+            <a [routerLink]="['/producto',producto._id]">
+                <img src="{{url+'get-imagen/'+producto.imagen}}" *ngIf="producto.imagen" >
+                <h3>Nombre: {{producto.nombre}} - Stock {{producto.stock}}
+                    Precio: {{producto.precio}} - Categoria {{producto.categoria}}
+                </h3>
+            </a>
+        </li>
+    </ul>
+</div>

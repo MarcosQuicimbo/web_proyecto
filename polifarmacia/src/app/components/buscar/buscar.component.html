@@ -1,0 +1,42 @@
+
+<div class="container">
+  <form #buscarForm="ngForm" (ngSubmit)="getProductoNombre(buscarForm)">
+      <p>
+          <label for="nombre">Nombre del helado:</label>
+          <input type="text" name="nombre" #nombre="ngModel" placeholder="nombre del helado" [(ngModel)]="producto.nombre" required>
+          <span *ngIf="nombre.touched && !nombre.valid">
+              Nombre obligatorio
+          </span>
+      </p>
+      <input type="submit" value="Buscar" [disabled]="!buscarForm.form.valid">
+  </form>
+</div>
+<app-productos></app-productos>
+<div id="targetas" class="row" *ngFor="let producto of productos" class="producto" style="margin-top: -20px;">
+  <div class="col-3">
+      <div class="card-container mx-auto mt-5">
+          <div class="card card-front">
+              <img src="{{url+'get-imagen/'+producto.imagen}}" *ngIf="producto.imagen" class="card-img-top image">
+              <div class="card-body text-center">
+                  <h4 class="card-title">{{producto.nombre}}</h4>
+                  <p class="card-text">Aqui va una descripcion para el producto "{{producto.nombre}}", este mensaje es
+                      unicamente para rellenar el espacio</p>
+                      <div class="row border-bottom">
+                          <div class="col-6 py-1 text-right border-right"><strong>Categoria</strong></div>
+                          <div class="col-6 py-1">{{producto.categoria}}</div>
+                      </div>
+                      <div class="row border-bottom">
+                          <div class="col-6 py-1 text-right border-right"><strong>Precio</strong></div>
+                          <div class="col-6 py-1">{{producto.precio}}</div>
+                      </div>
+              </div>
+
+              <a href="" class="btn px-4 mx-auto mb-4" [routerLink]="['/producto', producto._id]"
+                  style="background: #59C1BD; color: white;">Detalles</a>
+          </div>
+      </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<!-- Class End -->
+<div class="clearfix"></div>

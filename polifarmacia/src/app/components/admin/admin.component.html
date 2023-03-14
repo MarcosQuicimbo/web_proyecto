@@ -1,0 +1,36 @@
+<section class="seccionA">
+    <div class="container text-center">
+        <div class="row align-items-start" style="margin-bottom: 20px;">
+            <div class="col">
+                <form [routerLink]="['/guardar-producto']">
+                    <input id="Registrar" src="../../../assets/img/agregar-producto.png" type="image" />
+                </form>
+                <h2>Registrar Producto</h2>
+            </div>
+            <div class="col">
+                <form [routerLink]="['/productos']"> 
+                    <input id="Modificar" src="../../../assets/img/actualizar.png" type="image" />
+                </form>
+                <h2>Modificar Producto</h2>
+            </div>
+            <div class="col">
+                <form [routerLink]="['/eliminar-producto']">
+                    <input id="Eliminar" src="../../../assets/img/eliminar-producto.png" type="image" />
+                </form>
+                <h2>Eliminar Producto</h2>
+            </div>
+        </div>
+        <!-- <div class="row align-items-center">
+            <div class="col">
+            </div>
+            <div class="col">
+                <form [routerLink]="['/informacion']">
+                    <input id="Actualizar" src="../../../assets/actualizarAdmin.png" type="image" />
+                </form>
+                <h2>Actualizar Datos Personales</h2>
+            </div>
+            <div class="col">
+            </div>
+        </div> -->
+    </div>
+</section>

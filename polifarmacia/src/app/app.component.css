@@ -1,0 +1,65 @@
+#menu {
+    margin-left: 0px;
+    width: 100%;
+    margin-right: 0px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000); 
+    background: linear-gradient(to right, #434343, #000000); 
+    padding: 10px;
+  }
+  
+  #menu ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  #menu li {
+    margin: 0 10px;
+  }
+  
+  #menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #menu li a:hover {
+    background-color: #555;
+  }
+  
+  #user {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom:  15px;
+  }
+  
+  #user a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  #user a:hover {
+    text-decoration: underline;
+  }
+  .container{
+    background: #74ebd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+  
+
+  a[routerLink='/admin'] {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.2s ease-in-out;
+  }
